@@ -1,0 +1,49 @@
+.header {
+  padding: 15px 0;
+  background: #8f8b61;
+
+  @include _690 {
+    padding: 60px 0 62px 0;
+  }
+}
+
+.header-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  max-width: 189px;
+
+  @include _900 {
+    max-width: 158px;
+  }
+}
+.logo__link {
+}
+.logo__icon {
+  width: 100%;
+  height: auto;
+}
+.header-contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @include _690 {
+    display: none;
+  }
+}
+.header__numbar {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 170%;
+}
+.header__email {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 170%;
+}

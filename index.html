@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/script.js" defer></script>
+    <title>Инклюзив</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header-wrapper">
+          <div class="logo">
+            <a href="/" class="logo__link">
+              <img src="./img/logo.png" alt="" class="logo__icon" />
+            </a>
+          </div>
+          <!-- logo -->
+
+          <div class="header-contact">
+            <a href="tel:78003019360" class="header__numbar"
+              >8 (800) 301-93-60</a
+            >
+            <a href="mailto:lider-61@yandex.ru" class="header__email">
+              lider-61@yandex.ru
+            </a>
+          </div>
+          <button class="burger__btn">
+            <img src="./img/burger.svg" alt="" class="burger__icon" />
+          </button>
+        </div>
+        <!-- /.header-wrapper -->
+      </div>
+    </header>
+
+    <section class="section_burder none">
+      <div class="burger-contact">
+        <a href="tel:78003019360" class="header__numbar">8 (800) 301-93-60</a>
+        <a href="mailto:lider-61@yandex.ru" class="header__email">
+          lider-61@yandex.ru
+        </a>
+      </div>
+
+      <nav class="burger-nav container">
+        <ul class="burger-nav_list">
+          <li class="hero-nav_item active">
+            <a href="" class="hero-nac__link active"
+              >Методические рекомендации
+              <br />
+              ”Нумирошка”</a
+            >
+          </li>
+          <li class="hero-nav_item">
+            <a href="" class="hero-nac__link">
+              Каталог товаров
+            </a>
+          </li>
+          <li class="hero-nav_item">
+            <a href="" class="hero-nac__link">
+              Скидки
+            </a>
+          </li>
+          <li class="hero-nav_item">
+            <a href="" class="hero-nac__link">
+              О компании
+            </a>
+          </li>
+          <li class="hero-nav_item">
+            <a href="" class="hero-nac__link">
+              Блог
+            </a>
+          </li>
+          <li class="hero-nav_item">
+            <a href="" class="hero-nac__link">
+              Отзывы
+            </a>
+          </li>
+          <li class="hero-nav_item">
+            <a href="" class="hero-nac__link">
+              Контакты
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </section>
+
+    <nav class="hero-nav container">
+      <ul class="hero-nav_list">
+        <li class="hero-nav_item active">
+          <a href="" class="hero-nac__link active"
+            >Методические рекомендации
+            <br />
+            ”Нумирошка”</a
+          >
+        </li>
+        <li class="hero-nav_item">
+          <a href="" class="hero-nac__link">
+            Каталог товаров
+          </a>
+        </li>
+        <li class="hero-nav_item">
+          <a href="" class="hero-nac__link">
+            Скидки
+          </a>
+        </li>
+        <li class="hero-nav_item">
+          <a href="" class="hero-nac__link">
+            О компании
+          </a>
+        </li>
+        <li class="hero-nav_item">
+          <a href="" class="hero-nac__link">
+            Блог
+          </a>
+        </li>
+        <li class="hero-nav_item">
+          <a href="" class="hero-nac__link">
+            Отзывы
+          </a>
+        </li>
+        <li class="hero-nav_item">
+          <a href="" class="hero-nac__link">
+            Контакты
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <main class="main">
+      <section class="section-delivery container">
+        <h2 class="delivery__title">Выберете вариант доставки</h2>
+
+        <div class="delivery_wrapper">
+          <div class="select-wrapper">
+            <select name="" id="" class="delivery__select">
+              <option value=""> История адресов</option>
+              <option value="">Доставка1</option>
+              <option value="">Доставка2</option>
+              <option value="">Доставка3</option>
+              <option value="">Доставка4</option>
+            </select>
+          </div>
+          <!-- /.select-wrapper -->
+
+          <span class="delivery__text">
+            *Выберете адрес из
+            <br />
+            прошлых отправлений
+          </span>
+        </div>
+        <!-- /.delivery_wrapper -->
+      </section>
+      <section class="section-tabs container">
+        <label for="radio-address" class="tabs__label">
+          <input name="tabsChecked" type="radio" id="radio-address" />
+          <div class="checked"></div>
+          До адреса
+        </label>
+        <label for="pickup" class="tabs__label">
+          <input name="tabsChecked" type="radio" id="pickup" />
+          <div class="checked"></div>
+          Самовывоз
+        </label>
+        <label for="terminal" class="tabs__label">
+          <input name="tabsChecked" type="radio" id="terminal" />
+          <div class="checked"></div>
+          До терминала
+        </label>
+      </section>
+      <form class="form container">
+        <div class="pick-up">
+          <select name="pickup" id="" class="pick-up__select">
+            <option value="Название ТК">Название ТК</option>
+            <option value="«СДЭК»">«СДЭК»</option>
+            <option value="«СДЭК»">«ПЭК»</option>
+            <option value="«СДЭК»">Деловые линии</option>
+            <option value="«СДЭК»">«Почта России»</option>
+            <option value="«СДЭК»">Прямая доставка</option>
+            <option value="«СДЭК»">Другое</option>
+          </select>
+
+          <input
+            class="pick-up__input"
+            type="text"
+            placeholder="Желаемый терминал ТК"
+          />
+        </div>
+        <!-- pick-up -->
+
+        <div class="form__text">
+          * Доставка до нашего терминала ТК ПЭК и СДЭК осуществляется нашей
+          компанией БЕСПЛАТНО! Если Вам необходимо отправить груз другой ТК,
+          просьба оформлять забор груза самостоятельно
+        </div>
+
+        <div class="address">
+          <input class="input" type="text" placeholder="Улица" name="street" />
+
+          <div class="address_wrapper">
+            <input class="input" type="text" placeholder="Город" name="city" />
+            <input
+              class="input"
+              type="text"
+              placeholder="Индекс"
+              name="index"
+            />
+            <input
+              class="input"
+              type="text"
+              placeholder="№ Дома"
+              name="house"
+            />
+
+            <input
+              class="input"
+              type="text"
+              placeholder="№ Офиса"
+              name="office"
+            />
+          </div>
+        </div>
+        <!-- address -->
+
+        <div class="recipient">
+          <h2 class="form__title">Получатель</h2>
+
+          <div class="recipient_wrapper">
+            <div class="recipiemt_top">
+              <input
+                class="input"
+                type="text"
+                placeholder="ИНН"
+                name="recipiemtInn"
+              />
+              <input
+                class="input"
+                type="text"
+                placeholder="Фамилия Имя Отчество"
+                name="recipiemtFio"
+              />
+              <input
+                class="input"
+                type="tel"
+                placeholder="Телефон"
+                name="recipiemtNambar"
+              />
+            </div>
+            <!-- /.recipiemt_top -->
+            <div class="recipiemt_bottom">
+              <input
+                class="input"
+                type="text"
+                placeholder="Серия паспорта"
+                name="recipiemtPassport"
+              />
+              <input
+                class="input"
+                type="text"
+                placeholder="Номер паспорта"
+                name="recipiemtNumbarPasspo"
+              />
+            </div>
+            <!-- /.recipiemt_bottom -->
+
+            <span class="recipient__text"
+              >Серия и номер паспорта для физ лиц*</span
+            >
+          </div>
+          <!-- /.recipient_wrapper -->
+        </div>
+        <!-- recipient -->
+
+        <div class="payer">
+          <h2 class="form__title">Получатель</h2>
+
+          <div class="payer_grid">
+            <label for="radio-send" class="player__label input">
+              <input name="tabsChecked" type="radio" id="radio-send" />
+              Отправитель
+              <div class="checked"></div>
+            </label>
+            <label for="radio-buyer" class="player__label input">
+              <input name="tabsChecked" type="radio" id="radio-buyer" />
+              Покупатель
+              <div class="checked"></div>
+            </label>
+            <label for="radio-party" class="player__label input">
+              <input name="tabsChecked" type="radio" id="radio-party" />
+              Третье лицо
+              <div class="checked"></div>
+            </label>
+          </div>
+          <!-- /.payer_grid -->
+          <div class="payer_grid">
+            <input
+              class="input"
+              type="text"
+              placeholder="ИНН"
+              name="payerInn"
+            />
+            <input
+              class="input"
+              type="text"
+              placeholder="Фамилия Имя Отчество"
+              name="payerFio"
+            />
+            <input
+              class="input"
+              type="tel"
+              placeholder="Телефон"
+              name="payerNambar"
+            />
+          </div>
+          <!-- /.payer_grid -->
+
+          <div class="payer_checkbox">
+            <label for="checkbox-document" class="payer_checkbox__label">
+              <span> Документы не вкладывать с товаром</span>
+              <input type="checkbox" id="checkbox-document" name="document" />
+              <div class="checked"></div>
+            </label>
+            <label
+              for="checkbox-using"
+              class="payer_checkbox__label payer_checkbox__label--using"
+            >
+              <span>Подписываем по ЭДО</span>
+              <input type="checkbox" id="checkbox-using" name="using" />
+              <div class="checked"></div>
+            </label>
+          </div>
+
+          <div class="textarea">
+            <input
+              class="textarea__input"
+              type="text"
+              placeholder="Дополнительный комментарий"
+              name="comment"
+            />
+          </div>
+
+          <div class="payer_buttons">
+            <button class="payer__btn payer__btn--yellow">Подтвердить</button>
+            <button class="payer__btn payer__btn--transparent">
+              Сохранить адрес
+            </button>
+          </div>
+
+          <div class="payer__text">
+            *Вы можете сохранить адрес в историю адресов, для быстрого
+            использования при повторных отгрузках. Данная информация хранится
+            конфиденциально и будет видна только Вам.
+          </div>
+        </div>
+        <!-- /.payer -->
+      </form>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer_wrapper">
+          <ul class="footer_list">
+            <div class="footer__title">Информация</div>
+            <li class="footer_item">
+              <a href="" class="footer__link">О нас</a>
+            </li>
+            <li class="footer_item">
+              <a href="" class="footer__link">Наше производство</a>
+            </li>
+            <li class="footer_item">
+              <a href="" class="footer__link">Сертификаты</a>
+            </li>
+            <li class="footer_item">
+              <a href="" class="footer__link">Часто задаваемые вопросы</a>
+            </li>
+            <li class="footer_item">
+              <a href="" class="footer__link">Оптовикам</a>
+            </li>
+            <li class="footer_item">
+              <a href="" class="footer__link">Мы на портале поставщиков</a>
+            </li>
+            <li class="footer_item">
+              <a href="" class="footer__link">Мы на маркетплейсах</a>
+            </li>
+            <li class="footer_item">
+              <a href="" class="footer__link">Доставка и оплата</a>
+            </li>
+            <li class="footer_item">
+              <a href="" class="footer__link">Гарантия и возврат</a>
+            </li>
+            <li class="footer_item">
+              <a href="" class="footer__link">Социальная ответственность</a>
+            </li>
+            <li class="footer_item">
+              <a href="" class="footer__link">Футбольная команда “Инклюзив”</a>
+            </li>
+            <li class="footer_item">
+              <a href="" class="footer__link">Скидки</a>
+            </li>
+            <li class="footer_item">
+              <a href="" class="footer__link">Блог</a>
+            </li>
+            <li class="footer_item">
+              <a href="" class="footer__link">Отзывы</a>
+            </li>
+            <li class="footer_item">
+              <a href="" class="footer__link">Контакты</a>
+            </li>
+          </ul>
+          <!-- ul -->
+          <ul class="footer_list">
+            <div class="footer__title">Каталог</div>
+            <li class="footer_item">
+              <a href="" class="footer__link">Наборы для психолога</a>
+            </li>
+            <li class="footer_item">
+              <a href="" class="footer__link"
+                >Профессиональные столы психолога</a
+              >
+            </li>
+            <li class="footer_item">
+              <a href="" class="footer__link"
+                >Логопедические столы, наборы логопеда</a
+              >
+            </li>
+            <li class="footer_item">
+              <a href="" class="footer__link">Кабинет логопеда</a>
+            </li>
+            <li class="footer_item">
+              <a href="" class="footer__link"
+                >Дары Фрёбеля, Монтессори, Сенсорика</a
+              >
+            </li>
+            <li class="footer_item">
+              <a href="" class="footer__link">Развивающие игры и наборы</a>
+            </li>
+            <li class="footer_item">
+              <a href="" class="footer__link">Сенсорная комната</a>
+            </li>
+            <li class="footer_item">
+              <a href="" class="footer__link">Ландшафтные СТЕМ столы</a>
+            </li>
+            <li class="footer_item">
+              <a href="" class="footer__link">Интерактивное оборудование</a>
+            </li>
+            <li class="footer_item">
+              <a href="" class="footer__link">Коммуникаторы</a>
+            </li>
+            <li class="footer_item">
+              <a href="" class="footer__link">Адапированные игры и наборы</a>
+            </li>
+            <li class="footer_item">
+              <a href="" class="footer__link">Робототехника</a>
+            </li>
+            <li class="footer_item">
+              <a href="" class="footer__link">Игрушки</a>
+            </li>
+            <li class="footer_item">
+              <a href="" class="footer__link">Бизиборды, панели</a>
+            </li>
+            <li class="footer_item">
+              <a href="" class="footer__link">Мебель для ДОУ</a>
+            </li>
+            <li class="footer_item">
+              <a href="" class="footer__link">Оборудование для людей с ОВЗ</a>
+            </li>
+            <li class="footer_item">
+              <a href="" class="footer__link">Мягкая среда</a>
+            </li>
+            <li class="footer_item">
+              <a href="" class="footer__link">Кабинет психолога</a>
+            </li>
+          </ul>
+          <!-- ul -->
+          <ul class="footer_contact">
+            <div class="footer__title">Контакты</div>
+            <li class="footer_item">
+              <a href="" class="footer__link"
+                >Работаем с юридическими и физическими лицами</a
+              >
+            </li>
+            <li class="footer_item">
+              <a href="" class="footer__number">8 (800) 301-93-60</a>
+            </li>
+            <li class="footer_item">
+              <a href="" class="footer__link">lider-61@yandex.ru</a>
+            </li>
+            <li class="footer_item">
+              <a href="" class="footer__link"
+                >Ростовская обл., Ростов-на-Дону, ул. Ленина , 221, оф. 10</a
+              >
+            </li>
+
+            <div class="footer_social">
+              <div class="social__title">Мы в социальных сетях</div>
+
+              <div class="social_wrapper">
+                <a href="" class="social__link">
+                  <img src="./img/instagram.svg" alt="" class="social__icon" />
+                </a>
+                <a href="" class="social__link">
+                  <img src="./img/vk.svg" alt="" class="social__icon" />
+                </a>
+                <a href="" class="social__link">
+                  <img src="./img/youtybe.svg" alt="" class="social__icon" />
+                </a>
+              </div>
+            </div>
+            <!-- social -->
+
+            <div class="footer_reviews">
+              <div class="reviews__title">Все отзывы о нас</div>
+
+              <div class="reviews_wrapper">
+                <a href="" class="reviews__link reviews__link--aliexspress">
+                  <img
+                    src="./img/aliexspress.svg"
+                    alt=""
+                    class="reviews__icon"
+                  />
+                </a>
+                <a href="" class="reviews__link reviews__link--wilberes">
+                  <img src="./img/wilberes.svg" alt="" class="reviews__icon" />
+                </a>
+                <a href="" class="reviews__link reviews__link--ozon">
+                  <img src="./img/ozon.svg" alt="" class="reviews__icon" />
+                </a>
+                <a href="" class="reviews__link reviews__link--market">
+                  <img src="./img/market.svg" alt="" class="reviews__icon" />
+                </a>
+              </div>
+            </div>
+          </ul>
+        </div>
+        <!-- /.footer_wrapper -->
+      </div>
+      <!-- /.container -->
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,131 @@
+.footer {
+  background: #212529;
+  padding: 50px 0 60px 0;
+  margin-top: 30px;
+
+  @include _690 {
+    padding: 20px 0 100px 0;
+  }
+}
+
+.footer_wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  @include _900 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @include _690 {
+    grid-template-columns: 1fr;
+  }
+}
+
+.footer_list {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+
+  @include _690 {
+    gap: 15px;
+  }
+}
+.footer__title {
+  color: #fff;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32.5px;
+}
+.footer_item {
+}
+.footer__link {
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; /* 162.5% */
+}
+.footer_contact {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+.footer__number {
+  color: #fff;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32.5px; /* 162.5% */
+}
+.footer_social {
+  margin-top: 19px;
+
+  @include _690 {
+    margin-top: 15px;
+  }
+}
+.social__title {
+  color: #fff;
+  font-family: 'TT Norms';
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32.5px; /* 162.5% */
+}
+.social_wrapper {
+  display: flex;
+  align-items: center;
+  gap: 23px;
+  margin-top: 18px;
+}
+.social__link {
+}
+.social__icon {
+}
+.footer_reviews {
+  margin-top: 36px;
+
+  @include _690 {
+    margin-top: 15px;
+  }
+}
+.reviews__title {
+  color: #fff;
+  font-family: 'TT Norms';
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32.5px; /* 162.5% */
+}
+
+.reviews_wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-top: 18px;
+  gap: 18px;
+
+  @include _690 {
+    margin-top: 20px;
+    gap: 30px;
+  }
+}
+.reviews__link {
+  @include _690 {
+    &--ozon {
+      order: -1;
+    }
+    &--wilberes {
+    }
+    &--aliexspress {
+      display: none;
+    }
+    &--market {
+      display: block;
+    }
+  }
+  &--market {
+    display: block;
+  }
+}
+.reviews__icon {
+}

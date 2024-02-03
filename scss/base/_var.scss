@@ -1,0 +1,10 @@
+@mixin _900 {
+  @media (max-width: 900px) {
+    @content;
+  }
+}
+@mixin _690 {
+  @media (max-width: 900px) {
+    @content;
+  }
+}

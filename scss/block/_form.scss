@@ -1,0 +1,262 @@
+.form {
+  margin-top: 10px;
+}
+.pick-up {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 30px;
+
+  @include _690 {
+    grid-template-columns: 1fr;
+    row-gap: 10px;
+  }
+}
+.pick-up__select,
+.pick-up__input {
+  background: rgba(229, 229, 229, 0.3);
+  padding: 10px 0 10px 30px;
+
+  color: rgba(33, 37, 41, 0.6);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 140%;
+
+  &::placeholder {
+    color: rgba(33, 37, 41, 0.6);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 140%;
+  }
+}
+
+.form__text {
+  color: #212529;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 170%;
+  margin-top: 10px;
+
+  @include _690 {
+    display: none;
+  }
+}
+
+.address {
+  margin-top: 10px;
+  background: rgba(229, 229, 229, 0.3);
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 10px 30px;
+  row-gap: 10px;
+
+  @include _690 {
+    padding: 10px 10px;
+  }
+}
+.address_wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 30px;
+  row-gap: 10px;
+
+  @include _690 {
+    grid-template-columns: 1fr;
+  }
+}
+// address
+
+.recipient {
+}
+.form__title {
+  margin-top: 10px;
+  color: #212529;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 170%;
+
+  @include _690 {
+    font-size: 20px;
+  }
+}
+.recipient_wrapper {
+  margin-top: 10px;
+  background: rgba(229, 229, 229, 0.3);
+  padding: 10px 30px;
+  display: grid;
+  row-gap: 10px;
+
+  @include _690 {
+    padding: 10px 10px;
+  }
+}
+
+.recipiemt_top {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  column-gap: 10px;
+
+  @include _690 {
+    row-gap: 10px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.recipiemt_bottom {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 10px;
+
+  @include _690 {
+    input {
+      padding: 4px 0 4px 20px;
+      width: 100%;
+    }
+  }
+}
+.recipient__text {
+  color: #212529;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 170%;
+}
+// recipiemt
+
+.payer {
+}
+.form__title {
+}
+.payer_grid {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 20px 10px;
+
+  margin-top: 10px;
+  background: rgba(229, 229, 229, 0.3);
+  padding: 10px 30px;
+  row-gap: 10px;
+
+  @include _690 {
+    row-gap: 10px;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 10px 10px;
+  }
+}
+
+.player__label {
+  display: flex;
+  align-items: center;
+  color: #212529;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 170%;
+  gap: 10px;
+  & > input {
+    display: none;
+  }
+}
+
+#radio-send:checked ~ .checked {
+  background: #8f8b61;
+}
+#radio-buyer:checked ~ .checked {
+  background: #8f8b61;
+}
+#radio-party:checked ~ .checked {
+  background: #8f8b61;
+}
+
+.payer_checkbox {
+  display: flex;
+  align-items: center;
+  gap: 130px;
+  margin-top: 10px;
+}
+.payer_checkbox__label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  & > span {
+    color: #212529;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 170%;
+    order: 1;
+  }
+  & > input {
+    display: none;
+  }
+
+  &--using {
+    @include _690 {
+      display: none;
+    }
+  }
+}
+
+#checkbox-document:checked ~ .checked {
+  background: #8f8b61;
+}
+#checkbox-using:checked ~ .checked {
+  background: #8f8b61;
+}
+
+.textarea {
+  display: grid;
+  grid-template-columns: auto;
+  background: rgba(229, 229, 229, 0.3);
+  margin-top: 10px;
+  padding: 10px 0 83px 30px;
+}
+.textarea__input {
+  color: rgba(33, 37, 41, 0.6);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 170%; /* 27.2px */
+}
+
+.payer_buttons {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-top: 30px;
+
+  @include _690 {
+    flex-direction: column;
+  }
+}
+.payer__btn {
+  color: #212529;
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  padding: 10px 30px;
+  cursor: pointer;
+
+  @include _690 {
+    padding: 10px 0;
+    width: 100%;
+    text-align: center;
+  }
+  &--yellow {
+    background: #ff0;
+  }
+  &--transparent {
+    border: 1px solid #000;
+  }
+}
+
+.payer__text {
+  color: #212529;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 170%; /* 20.4px */
+  margin-top: 10px;
+  max-width: 580px;
+}
