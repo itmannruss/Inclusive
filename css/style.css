@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import 'fonts.css';
 * {
   padding: 0;
@@ -730,4 +731,41 @@ body {
 }
 .burger-nav_list a:hover {
   color: aliceblue;
+}
+
+.thank__title {
+  margin-top: 30px;
+  color: rgb(88, 130, 4);
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 170%;
+  letter-spacing: 0%;
+}
+
+.thanks__text {
+  margin-top: 30px;
+  color: rgb(33, 37, 41);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 170%;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.thenks_contacts {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.thanks__span {
+  /* текст */
+  color: rgb(33, 37, 41);
+  font-family: TT Norms;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 170%;
+  letter-spacing: 0%;
+  text-align: left;
 }/*# sourceMappingURL=style.css.map */
