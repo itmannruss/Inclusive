@@ -23,7 +23,7 @@ function removeAddress(address) {
 function showAddress(address) {
   pointList.value = 'Название ТК';
   address.classList.remove('none');
-  lineInput.classList.add('none');
+  // lineInput.classList.add('none');
 }
 
 radioAddress.addEventListener('click', () => {
@@ -38,8 +38,8 @@ terminal.addEventListener('click', () => {
 
 pointList.addEventListener('click', () => {
   if (pointList.value === 'Деловые линии') {
-    lineInput.classList.remove('none');
     removeAddress(boxAddress);
+    lineInput.classList.remove('none');
   } else {
     lineInput.classList.add('none');
     showAddress(boxAddress);
