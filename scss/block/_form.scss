@@ -11,6 +11,7 @@
     row-gap: 10px;
   }
 }
+
 .pick-up__select,
 .pick-up__input {
   background: rgba(229, 229, 229, 0.3);
@@ -65,8 +66,6 @@
 }
 // address
 
-.recipient {
-}
 .form__title {
   margin-top: 10px;
   color: #212529;
@@ -121,10 +120,6 @@
 }
 // recipiemt
 
-.payer {
-}
-.form__title {
-}
 .payer_grid {
   display: grid;
   grid-template-columns: repeat(3, auto);
