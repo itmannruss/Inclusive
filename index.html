@@ -249,9 +249,10 @@
           компанией БЕСПЛАТНО! Если Вам необходимо отправить груз другой ТК,
           просьба оформлять забор груза самостоятельно
         </div>
-        <div class="line container">
+        <div class="line container line-input none">
+          <h2 class="form__title">Адрес забора груза</h2>
           <input
-            class="input line-input none"
+            class="input w"
             type="text"
             disabled="true"
             placeholder="Ростовская область, Аксайский район, поселок Водопадный, пер. Рыбинский, 4"
@@ -259,6 +260,8 @@
             name="lineAddress"
           />
         </div>
+        <!-- line -->
+
         <div class="address">
           <input
             class="input street"
@@ -342,9 +345,9 @@
         <!-- recipient -->
 
         <div class="payer">
-          <h2 class="form__title">Получатель</h2>
+          <h2 class="form__title pt">Плательщик</h2>
 
-          <div class="payer_grid">
+          <div class="payer_grid pn">
             <label for="radio-send" class="player__label input">
               <input name="tabsChecked" type="radio" id="radio-send" />
               Отправитель
@@ -362,7 +365,7 @@
             </label>
           </div>
           <!-- /.payer_grid -->
-          <div class="payer_grid">
+          <div class="payer_grid pn2">
             <input
               class="input"
               type="text"
