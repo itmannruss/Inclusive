@@ -16,9 +16,13 @@ const recipient = document.querySelector('.recipient');
 const formTitle = document.querySelector('.form__title');
 const pn = document.querySelector('.pn');
 const pn2 = document.querySelector('.pn2');
+const radioParty = document.querySelector('#radio-party');
+const radioBuyer = document.querySelector('#radio-buyer');
+const radioSend = document.querySelector('#radio-send');
 const pickUp = document.querySelector('.pick-up');
 const formText = document.querySelector('.form__text');
 const pt = document.querySelector('.pt');
+const pickUpInput = document.querySelector('.pick-up__input');
 
 function removeAddress(address) {
   // pointList.value = 'Название ТК';
@@ -31,6 +35,16 @@ function showAddress(address) {
   // lineInput.classList.add('none');
 }
 
+radioParty.addEventListener('click', () => {
+  showAddress(pn2);
+});
+radioBuyer.addEventListener('click', () => {
+  removeAddress(pn2);
+});
+radioSend.addEventListener('click', () => {
+  removeAddress(pn2);
+});
+
 radioAddress.addEventListener('click', () => {
   showAddress(boxAddress);
 
@@ -40,6 +54,8 @@ radioAddress.addEventListener('click', () => {
   showAddress(pickUp);
   showAddress(formText);
   showAddress(pt);
+
+  removeAddress(pickUpInput);
 });
 pickup.addEventListener('click', () => {
   removeAddress(boxAddress);
@@ -62,6 +78,8 @@ terminal.addEventListener('click', () => {
   showAddress(pickUp);
   showAddress(formText);
   showAddress(pt);
+  showAddress(pickUpInput);
+  showAddress(recipient);
 });
 
 // pointList.addEventListener('click', () => {
@@ -98,13 +116,15 @@ pointList.addEventListener('click', () => {
 pointList.addEventListener('click', () => {
   if (terminal.checked && pointList.value !== 'Деловые линии') {
     removeAddress(boxAddress);
-    removeAddress(recipient);
   } else if (pointList.value === 'Деловые линии') {
     removeAddress(boxAddress);
     removeAddress(recipient);
     showAddress(lineInput);
+  } else if (radioAddress.checked) {
+    removeAddress(pickUpInput);
   } else {
     showAddress(boxAddress);
     showAddress(recipient);
+    showAddress(rpickUpInput);
   }
 });
