@@ -73,6 +73,23 @@ body {
   display: none !important;
 }
 
+#radio-save {
+  display: none;
+}
+
+.save__label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.save__label > span {
+  order: 1;
+}
+
+#radio-save:checked ~ .checked {
+  background: #8f8b61;
+}
+
 .header {
   padding: 15px 0;
   background: #8f8b61;
